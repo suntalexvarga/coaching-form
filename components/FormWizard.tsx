@@ -45,11 +45,11 @@ const STEPS: Step[] = [
   {
     kind: "question",
     id: "help",
-    title: "Cu ce te pot ajuta?",
-    subtitle: "Spune-mi în câteva rânduri ce te-a adus aici.",
-    input: "textarea",
+    title: "Iti plac manelele?",
+    subtitle: "Raspunde sincer.",
+    input: "choice",
+    options: ["Da", "Nu"],
     required: true,
-    placeholder: "Scrie aici...",
   },
   {
     kind: "question",
@@ -113,7 +113,7 @@ function buildWhatsAppUrl(a: Answers): string {
   const lines = [
     `Salut! Sunt ${a.name.trim()}. Am completat formularul „Primul pas către tine”:`,
     "",
-    "1. Cu ce mă poți ajuta:",
+    "1. Ii plac manelele:",
     a.help.trim(),
     "",
     "2. De cât timp mă confrunt cu situația:",
