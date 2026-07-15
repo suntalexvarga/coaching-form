@@ -45,11 +45,11 @@ const STEPS: Step[] = [
   {
     kind: "question",
     id: "help",
-    title: "Iti plac manelele?",
-    subtitle: "Raspunde sincer.",
-    input: "choice",
-    options: ["Da", "Nu"],
+    title: "Cu ce te pot ajuta?",
+    subtitle: "Spune-mi în câteva rânduri, cu ce te pot ajuta?",
+    input: "textarea",
     required: true,
+    placeholder: "Scrie aici...",
   },
   {
     kind: "question",
